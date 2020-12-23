@@ -14,7 +14,7 @@ const loader = new THREE.TextureLoader()
 const geometry = new THREE.PlaneGeometry(5, 3, 15, 9);
 const material = new THREE.MeshBasicMaterial( { 
   /*color: 0x000000,*/
-  map: loader.load("images/atari3.png")
+  map: loader.load("images/atari.jpg")
 } );
 const flag = new THREE.Mesh( geometry, material );
 scene.add( flag );
