@@ -11,10 +11,10 @@ renderer.setSize( section.clientWidth, section.clientHeight );
 section.appendChild( renderer.domElement );
 
 const loader = new THREE.TextureLoader()
-const geometry = new THREE.PlaneGeometry(5, 3, 15, 9);
+const geometry = new THREE.PlaneGeometry(6, 4, 25, 12);
 const material = new THREE.MeshBasicMaterial( { 
-  /*color: 0x000000,*/
-  map: loader.load("images/atari.jpg")
+  /* color: 0x000000*/
+  map: loader.load("images/atari.jpg") 
 } );
 const flag = new THREE.Mesh( geometry, material );
 scene.add( flag );
