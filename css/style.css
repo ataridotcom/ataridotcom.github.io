@@ -28,7 +28,7 @@ nav {
   height: 100%;
  	font-size: 80%;
   font-family: "Roboto";
-  padding: 10px;
+  margin: -30px;
   text-align: right;
 }
 a:link {
