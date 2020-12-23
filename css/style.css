@@ -3,6 +3,11 @@
   src: url("/fonts/Bebas-Regular.otf") format("opentype")
 }
 
+@font-face {
+  font-family: "inter";
+  src: url("fonts/Inter-ExtraLight-sInt=0.ttf") format("truetype")
+}
+
 header {
   font-size: 24px;
   font-family: "bebas";
@@ -32,7 +37,7 @@ nav {
   width: 50%;
   height: 100%;
  	font-size: 80%;
-  font-family: "bebas";
+  font-family: "inter";
   margin: -30px;
   text-align: right;
 }
