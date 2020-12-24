@@ -13,11 +13,29 @@ section.appendChild( renderer.domElement );
 const loader = new THREE.TextureLoader()
 const geometry = new THREE.PlaneGeometry(6, 4, 25, 12);
 const material = new THREE.MeshBasicMaterial( { 
-  /* color: 0x000000*/
-  map: loader.load("images/atari.jpg") 
+  color: 0x000000
+  /* map: loader.load("images/atari.jpg") */
 } );
 const flag = new THREE.Mesh( geometry, material );
 scene.add( flag );
+
+/* test */
+starGeo = new THREE.Geometry();
+for(let i=0;i<6000;i++) {
+  star = new THREE.Vector3(
+    Math.random() * 600 - 300,
+    Math.random() * 600 - 300,
+    Math.random() * 600 - 300
+  );
+  let sprite = new THREE.TextureLoader().load('darkstar.png')
+  let starMaterial = new THREE.PointsMaterial({
+    color: 0xaaaaaa,
+    size: 0.7,
+    map: sprite
+  });
+
+  starGeo.vertices.push(star);
+}
 
 flag.rotation.set(-0.1, 0, 0);
 
