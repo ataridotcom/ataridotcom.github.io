@@ -1,0 +1,5 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/base",
+  "extensions": ["techer.open-in-browser"]
+}
+
